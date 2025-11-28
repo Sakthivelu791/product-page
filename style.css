@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+    background-color:hsl(30, 38%, 92%);
+    font-family:Montserrat;
+}
+.deskimg{
+    display:none;
+}
+.main{
+    background-color: white;
+    margin:20% 5% 40% 5%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.upper{
+    letter-spacing: 5px;
+}
+h1{
+    font-family: Fraunces;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+}
+p{
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+button{
+    width: 90%;
+    height: 50px;
+    margin: 20px 0px 20px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+.main img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.content{
+    padding: 5%;
+}
+.rs{
+    display: inline;
+    color: hsl(158, 36%, 37%) ;
+}
+.line{
+    display: inline;
+    text-decoration: line-through;
+    padding: 5px;
+
+}
+button::before{
+  content: url('/images/icon-cart.svg'); /* path to your SVG */
+  display: inline-block;
+  width: 1em;   /* control size */
+  height: 1em;
+  margin-right: 0.5em; /* spacing between icon and text */
+  vertical-align: middle;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/images/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: "Fraunces";
+    src: url(/images/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+@media (min-width:810px) {
+    .mobimg{
+        display: none;
+    }
+    .deskimg{
+        display: flex;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width:40%;
+        margin: 5% 30% ;
+        height: auto;
+
+    }
+    button:hover{
+        background-color: hsl(158, 42%, 18%);
+    }
+    
+}
